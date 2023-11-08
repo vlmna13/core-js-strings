@@ -459,6 +459,10 @@ describe('strings-tasks optimal implementation', () => {
 
   it.optional('optimal implementation of startsWith', function test() {
     let fnStr = tasks.startsWith.toString();
+
+    // function startsWith(str, substr) { if (str.indexOf(substr) === 0) { return true; } return false; }
+
+
     const idx = fnStr.indexOf('{');
     fnStr = fnStr.slice(idx);
 
